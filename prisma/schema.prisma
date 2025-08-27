@@ -32,4 +32,6 @@ model Password{
   userId    String
   user      User     @relation(fields: [userId], references: [id])
   createdAt        DateTime @default(now())
+  lastUpdated DateTime@default(now())
+  ignoreReminder Boolean @default(false)
 }

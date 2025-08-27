@@ -49,7 +49,7 @@ export default function Login(){
         }
     };
     return (
-        <div className="flex items-center justify-center min-h-screen bg-slate-300">
+        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-pink-900 to-pink-700">
           <AppAlert
             open={!!alertMessage}
             type={"error"}
@@ -80,7 +80,7 @@ export default function Login(){
               className="bg-slate-50 border border-slate-400 rounded-md"
               id="email"
               type="email"
-              placeholder="sample@lokify.com"
+              placeholder="sample@vaultify.com"
               onChange={(e)=>{setEmail(e.target.value)}}
               required
             />

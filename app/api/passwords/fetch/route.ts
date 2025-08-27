@@ -20,6 +20,8 @@ export async function GET(req: Request) {
         platform_url: true,
         platform_username: true,
         createdAt: true,
+        lastUpdated:true,
+        ignoreReminder:true
       }
     });
 

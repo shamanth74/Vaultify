@@ -79,7 +79,7 @@ export default function SignUp() {
 
   return (
 
-  <div className="flex items-center justify-center min-h-screen bg-slate-300">
+  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-pink-900 to-pink-700">
     <AppAlert
   open={!!alertMessage || success}
   type={success ? "success" : "error"}
