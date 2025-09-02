@@ -10,7 +10,7 @@ It empowers users to securely generate, store, manage, and monitor their passwor
 ### 🛡️ Zero-Knowledge Architecture
 - Passwords are **encrypted and decrypted using a master password**.
 - Even the service provider cannot access or view stored passwords.
-- Ensures GDPR & privacy compliance.
+
 
 ### 🔑 Password Management
 - Add, view, update, and delete stored passwords.
@@ -29,7 +29,7 @@ It empowers users to securely generate, store, manage, and monitor their passwor
 
 ### ⏰ Smart Reminders
 - Get **45-day password expiry reminders**.
-- Option to **snooze or ignore** reminders if desired.
+- Option to **ignore** reminders if desired.
 - Helps enforce regular password updates.
 
 ### 📧 Email Alerts
@@ -55,7 +55,7 @@ It empowers users to securely generate, store, manage, and monitor their passwor
 ---
 
 ## 📂 Project Structure
-
+```bash
 vaultify-secure/
 │── app/ # Next.js App Router
 │ ├── (auth)/ # Login & Signup pages
@@ -68,7 +68,7 @@ vaultify-secure/
 │── styles/ # Global styles & theme
 │── .env # Environment variables
 │── README.md # Documentation
-
+```
 
 ---
 
@@ -78,50 +78,52 @@ vaultify-secure/
    ```bash
    git clone https://github.com/yourusername/vaultify-secure.git
    cd vaultify-secure
+  
 
-
-Install dependencies
-
+**Install dependencies**
+```bash
 npm install
+```
 
-
-Configure environment variables (.env)
-
+**Configure environment variables (.env)**
+```bash
 DATABASE_URL="your_neon_db_url"
 NEXTAUTH_SECRET="your_secret"
 EMAIL_USER="your_gmail"
 EMAIL_PASS="your_app_password"
+```
 
-
-Run database migrations
-
+**Run database migrations**
+```bash
 npx prisma migrate dev
+```
 
-
-Start development server
-
+**Start development server**
+```bash
 npm run dev
+```
+## 🚀 Deployment
 
-🚀 Deployment
+**Hosted on Vercel**
 
-Hosted on Vercel
+**Database on NeonDB (PostgreSQL)**
 
-Database on NeonDB (PostgreSQL)
+**Every push to GitHub auto-deploys to production 🚀**
 
-Every push to GitHub auto-deploys to production 🚀
+## 👨‍💻 Author
 
-👨‍💻 Author
+### Shamanth M
 
-Shamanth M
-5th Semester ISE, VVCE Mysore
-Aspiring SWE | Passionate about Security & Full-Stack Development
+- 5th Semester ISE, VVCE Mysore  
+- Aspiring SWE  
+- Passionate about Security & Full-Stack Development  
 
-⭐ Why Vaultify Secure?
+### ⭐ Why Vaultify Secure?
 
-Unlike typical password managers, Vaultify Secure prioritizes zero-knowledge principles:
+-Unlike typical password managers, Vaultify Secure prioritizes zero-knowledge principles:
 
-Your master password is the only key to decrypt data.
+-Your master password is the only key to decrypt data.
 
-Email alerts + reminders create real accountability.
+-Email alerts + reminders create real accountability.
 
-A blend of security + usability, making it resume-worthy and interview-impactful.
+-A blend of security + usability, making it resume-worthy and interview-impactful.
